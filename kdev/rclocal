@@ -126,7 +126,6 @@ deb http://mirrors.aliyun.com/ubuntu jammy-backports main restricted universe mu
 deb-src http://mirrors.aliyun.com/ubuntu jammy-backports main restricted universe multiverse
 
 EOF
-	sed -i 's/security.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
 	apt-get update && apt-get install -y vim tmux openssh-server net-tools build-essential lrzsz
 	sed -i '/^#PermitRootLogin/c\PermitRootLogin yes' /etc/ssh/sshd_config
 	sync
