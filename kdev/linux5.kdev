@@ -1,0 +1,14 @@
+sourcedir = /linux/linux-5.git
+nbd = nbd5
+sourcedir = /linux/linux-5.git
+arch = x86_64
+debug = True
+skipimagecheck = True
+vmname = kdev-linux5
+config = ubuntu22_x86_64_defconfig
+nodocker = False
+mrproper = False
+isoimage = False
+rclocal = /linux/linux-5.git-build-x86_64/rclocal
+qcow2_image = /linux/linux-5.git-build-x86_64/rootfs.qcow2
+
