@@ -130,6 +130,7 @@ EOF
 	sed -i '/^#PermitRootLogin/c\PermitRootLogin yes' /etc/ssh/sshd_config
 	rm -f /etc/profile.d/*
 	sync
+	ln -svf /usr/src/linux-headers-5.15.60-kdev /kernel
 	# reboot -f
 else
 	sync
