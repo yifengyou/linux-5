@@ -1,6 +1,6 @@
 sourcedir = /linux/linux-5.git
 nbd = nbd5
-sourcedir = /linux/linux-5.git
+docker_image = yifengyou/linux5.0:latest
 arch = x86_64
 debug = True
 skipimagecheck = True
